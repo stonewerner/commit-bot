@@ -29,7 +29,7 @@ async function makeCommit() {
   console.log('Pushed to repository');
 
   // Step 5: Write log entry
-  const logEntry = `Commit made at ${dateTimeString}\nCommit Hash: ${commitHash}\n\n`;
+  const logEntry = `Commit made at ${dateTimeString}\nPrevious Commit Hash: ${commitHash}\n\n`;
   fs.appendFileSync(filePath, logEntry, 'utf8');
   console.log(`Logged commit information to ${filePath}`);
 }
